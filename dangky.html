@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="./TH_B1_Data/images/favicon.ico">
+		<link rel="stylesheet" href="./main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<title>Đăng Ký Thành Viên</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="trangchu.html">
+				<img id="logo" src="./TH_B1_Data/images/logo.png">
+			</a>
+
+			<img id="img1" src="./TH_B2_Data/header-img1.png">
+			<img id="img2" src="./TH_B2_Data/header-img2.png">
+			<img id="img3" src="./TH_B2_Data/header-img3.png">
+
+			<nav>
+				<a href="trangchu.html" target="_blank">Trang chủ</a>
+				<a href="gioithieu.html" target="_blank">Giới thiệu</a>
+				<a href="sanpham.html" target="_blank">Sản phẩm</a>
+				<a href="tintuc.html" target="_blank">Tin tức</a>
+				<a href="dangnhap.html" target="_blank">Đăng nhập</a>
+				<a href="dangky.html" target="_blank">Đăng ký</a>
+				<a href="lienhe.html" target="_blank">Liên hệ</a>
+
+				<div>
+					<form id="formtimkiem" method="GET" action="timkiem.html">
+						<input id="otimkiem" name="otimkiem" type="text" placeholder="Nhập nội dung cần tìm...">
+						<i id="search" class="fa-solid fa-magnifying-glass"></i>
+						<i id="cart" class="fa-solid fa-cart-shopping"></i>
+					</form>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<fieldset>
+				<legend>Đăng ký</legend>
+
+				<form onsubmit="return CheckDataSignup()" method="POST" enctype="multipart/from-data">
+					<table width="60%">
+						<tr>
+							<td><label for="email">Email</label></td>
+							<td>
+								<input type="text" placeholder="Vui lòng nhập email" name="email" id="email">
+							</td> 
+						</tr>
+						<tr>
+							<td><label for="password">Mật khẩu</td>
+							<td>
+								<input type="password" name="password" placeholder="Vui lòng nhập mật khẩu" id="password">
+							</td>
+						</tr>
+						<tr>
+							<td><label for="password2">Nhập lại mật khẩu</label></td>
+							<td>
+								<input type="password" name="password2" id="password2" placeholder="Vui lòng nhập mật khẩu">
+							</td>
+						</tr>
+
+						<tr>
+							<td>Cấp độ thành viên</td>
+							<td>
+								<input type="radio" name="memberType">Bạc
+								<input type="radio" name="memberType">Vàng
+								<input type="radio" name="memberType">Bạch kim
+							</td>
+						</tr>
+
+						<tr>
+							<td>Ảnh đại diện</td>
+							<td>
+								<input type="file">
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								Thông qua việc tạo tài khoản, bạn đồng ý với <a href="">Điều khoản & Quyền riêng tư của chúng tôi.</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="Đăng ký">
+								<input type="reset" value="Hủy">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</fieldset>
+		</main>
+
+		<footer>
+			<b>2023 Bản quyền thuộc về FreeezeVN</b>
+			<a href="http://www.facebook.com" target="_blank">Facebook</a>
+			<a href="https://twitter.com" target="_blank">X</a>
+			<a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+			<a href="#logo">Về đầu trang</a>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>

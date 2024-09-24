@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<title>Đơn hàng</title>
+</head>
+
+<body>
+	<header>
+		<a href="trangchu.html">
+			<img id="logo" src="./TH_B1_Data/images/logo.png">
+		</a>
+
+		<img id="img1" src="./TH_B2_Data/header-img1.png">
+		<img id="img2" src="./TH_B2_Data/header-img2.png">
+		<img id="img3" src="./TH_B2_Data/header-img3.png">
+
+		<nav>
+			<a href="trangchu.html" target="_blank">Trang chủ</a>
+			<a href="gioithieu.html" target="_blank">Giới thiệu</a>
+			<a href="sanpham.html" target="_blank">Sản phẩm</a>
+			<a href="tintuc.html" target="_blank">Tin tức</a>
+			<a href="dangnhap.html" target="_blank">Đăng nhập</a>
+			<a href="dangky.html" target="_blank">Đăng ký</a>
+			<a href="lienhe.html" target="_blank">Liên hệ</a>
+
+			<div>
+				<form id="formtimkiem" method="GET" action="timkiem.html">
+					<input id="otimkiem" name="otimkiem" type="text" placeholder="Nhập nội dung cần tìm...">
+					<i id="search" class="fa-solid fa-magnifying-glass"></i>
+					<i id="cart" class="fa-solid fa-cart-shopping"></i>
+				</form>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h1>CHI TIẾT ĐƠN HÀNG</h1>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Hình SP</th>
+					<th>Tên SP</th>
+					<th>Số lượng</th>
+					<th>Giá</th>
+					<th>Thành tiền</th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tbody>
+				
+			</tbody>
+
+			<tfoot >
+
+			</tfoot>
+		</table>
+	</main>
+
+	<footer>
+		2023 Bản quyền thuộc về FreeezeVN
+		<a href="http://www.facebook.com" target="_blank">
+			<i class="fa-brands fa-facebook"></i>
+		</a>
+		<a href="https://twitter.com" target="_blank">
+			<i class="fa-brands fa-x-twitter"></i>
+		</a>
+		<a href="https://www.pinterest.com/" target="_blank">
+			<i class="fa-brands fa-pinterest"></i>
+		</a>
+		<a href="#logo">
+			<img id="goback" src="./TH_B2_Data/top.png">
+		</a>
+	</footer>
+
+	<script src="./main.js">
+	</script>
+	<script >
+		showCart();
+	</script>
+</body>
+</html>
